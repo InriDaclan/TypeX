@@ -2,6 +2,9 @@
 
 A modern, futuristic typing practice and speed test website built with pure HTML, CSS, and Vanilla JavaScript.
 
+## Preview
+![TypeX Screenshot](Screenshot%20from%202026-10-02%2022-45-19.png)
+
 ## Features
 
 - **Modern Interface**: Dark/near-black background with strong accent color (#00f3ff), clean typography, and smooth animations
