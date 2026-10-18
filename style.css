@@ -598,5 +598,5 @@ main {
 }
 
 .untyped {
-    color: var(--text-muted) !important;
+    color: var(--text-primary) !important;
 }

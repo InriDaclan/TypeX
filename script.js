@@ -140,6 +140,10 @@ function setupEventListeners() {
             const section = link.getAttribute('data-section');
             showSection(section);
             updateNavActive(link);
+            if (section === "practice") {
+                loadPracticePassage();
+                resetPracticeStats();
+            }
         });
     });
     
@@ -289,8 +293,8 @@ function handleTypingInput(e) {
 function startTest() {
     state.isTesting = true;
     state.startTime = Date.now();
-    state.typedText = '';
-    typingInput.value = '';
+    // state.typedText = '';
+    // typingInput.value = '';
     clearInterval(state.timer);
     state.timer = setInterval(updateTimer, 1000);
     updateTimer(); // Initial update
@@ -476,8 +480,8 @@ function handlePracticeInput(e) {
 
 function startPractice() {
     state.isPracticeMode = true;
-    state.typedText = '';
-    practiceInput.value = '';
+    // state.typedText = '';
+    // practiceInput.value = '';
 }
 
 function updatePracticeHighlighting() {
